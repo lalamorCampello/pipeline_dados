@@ -6,7 +6,7 @@ class Dados:
         self.path = path
         self.tipo_dados = tipo_dados
         self.dados = self.leitura_dados()
-        self.nome_colunas = self.get_columns()
+        self.nome_colunas = self.get_colunas()
         self.qtd_linhas = self.size_data()        
 
     # Leitura dos dados json
@@ -52,7 +52,7 @@ class Dados:
             new_dados.append(dict_temp)
 
         self.dados = new_dados
-        self.nome_colunas = self.get_columns()
+        self.nome_colunas = self.get_colunas()
 
     # Retorna a quantidade de registros nos dados
     def size_data(self):
